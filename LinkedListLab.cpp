@@ -48,7 +48,12 @@ void removeFirst(List* &list){
 //contains the value needle, and false otherwise.
 bool contains(List* haystack, string needle){
     //❓ Lab Question 10
-    //YOUR CODE HERE
+    while ( haystack != NULL ){
+            if ( haystack->value == needle){
+                return true;
+            }
+            haystack = haystack->next;
+        }
     return false;
 }
 
